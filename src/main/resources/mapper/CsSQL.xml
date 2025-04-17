@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ac.kr.hanyang.backendEx.repository.CsRepositoryMysql">
+    <select id="findList" resultType="ac.kr.hanyang.backendEx.dto.CsDto" parameterType="ac.kr.hanyang.backendEx.dto.CsDto">
+        SELECT idx AS id, cs_nm, cs_enm, cs_tel FROM _com_cs
+    </select>
+</mapper>
